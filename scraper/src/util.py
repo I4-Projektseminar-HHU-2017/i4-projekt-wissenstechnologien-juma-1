@@ -4,7 +4,7 @@ def is_empty(string: str):
 
 def is_valid_url(url):
     if isinstance(url, str):
-        if not is_empty(url) and url is not None:
+        if not is_empty(url):
             return True
         else:
             return False

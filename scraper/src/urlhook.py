@@ -38,8 +38,6 @@ class UrlHook:
                 async with self.semaphore, session.head(url) as response:
                     if response.status == 200:  # https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
                         ping_success = True
-                    elif response.status == 403:
-                        pass
         except Exception as e:
             print(e, sys.exc_info()[0])
         finally:
