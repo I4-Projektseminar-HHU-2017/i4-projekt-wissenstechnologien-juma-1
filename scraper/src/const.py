@@ -1,5 +1,11 @@
+# Metacritic base URL
 BASE_URL = "http://www.metacritic.com/"
-METACRITIC_CATEGORIES = ['movies', 'games', 'tv', 'albums']
+
+# Categories this scraper can handle
+METACRITIC_CATEGORIES = ['games', 'tv', 'albums']
+
+# Metacritic filter options
 METACRITIC_FILTERS = ['90day', 'all', 'year', 'discussed', 'shared']
-# PAGE_CONSTANTS = ['first', 'last', 'middle', 'random']
+
+# Metacritic sorting constants
 SORTING_CONSTANTS = ['asc', 'desc']

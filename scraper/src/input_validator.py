@@ -21,16 +21,3 @@ def is_valid_sorting(sorting: str):
         return sorting.lower().strip()
     else:
         raise InvalidInput("{} is not a valid filter.".format(sorting))
-
-"""
-def is_valid_page(page: str):
-    if page.lower().strip() in PAGE_CONSTANTS:
-        return page.lower().strip()
-    else:
-        try:
-            int(page)
-        except ValueError():
-            raise InvalidInput("{} is not a valid page.".format(page))
-        else:
-            return int(page)
-"""
