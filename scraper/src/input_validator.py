@@ -21,3 +21,10 @@ def is_valid_sorting(sorting: str):
         return sorting.lower().strip()
     else:
         raise InvalidInput("{} is not a valid filter.".format(sorting))
+
+
+def is_valid_write(write: str):
+    if write.lower().strip() in WRITE_CONSTANTS:
+        return write.lower().strip()
+    else:
+        raise InvalidInput("{} is not a valid write constant.".format(write))

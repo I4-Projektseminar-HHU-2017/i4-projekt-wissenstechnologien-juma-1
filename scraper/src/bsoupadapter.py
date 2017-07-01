@@ -27,11 +27,13 @@ class BSoupAdapter:
                     return soup
         except urllib.request.HTTPError as e:
             if e.code == 429:  # simple spam protection handling
-                print("Server side spam protection triggered, retrying in 10 seconds...")
+                print("{} Server side spam protection triggered, retrying in 10 seconds...".format(self.url))
                 time.sleep(10)
-                self.make_soup()
+                return self.make_soup()
             else:
                 print(e, sys.exc_info()[0], "on URL: {}".format(self.url))
+        except KeyboardInterrupt:
+            return None
         except Exception as e:
             print(e, sys.exc_info()[0])
 

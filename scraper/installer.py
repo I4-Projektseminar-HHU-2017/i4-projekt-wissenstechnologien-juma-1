@@ -51,11 +51,10 @@ def create_launch_bat():
             requirements_fulfilled = False
 
     if requirements_fulfilled:
-        print("Everything good!")
+        print("Python requirements OK!")
         with open("scraper.bat", "w") as bat:
             bat.write("@echo off\n{} metacritic_scraper.py\npause".format(python_exe))
             bat.close()
-        print("Use 'scraper.bat' to begin scraping.")
 
 
 def run_subprocess(code):
@@ -70,9 +69,19 @@ def run_subprocess(code):
         return False
 
 
+def create_textfiles():
+    print("Creating output files...")
+    textfile_names = [str(i) + "_reviews.txt" for i in range(0, 11)]
+    for name in textfile_names:
+        open("./output/"+name, 'w').close()
+    print("Done.")
+
+
 def main():
     try:
         create_launch_bat()
+        create_textfiles()
+        print("\nUse 'scraper.bat' to begin scraping.")
     except Exception as e:
         print(e, sys.exc_info()[0])
         sys.exit(-1)
@@ -80,6 +89,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
