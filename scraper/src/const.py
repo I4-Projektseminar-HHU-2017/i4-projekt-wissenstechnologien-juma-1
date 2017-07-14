@@ -18,3 +18,9 @@ OUTPUT_PATH = './output/'
 
 # review textfiles suffix
 REVIEW_TXT_SUFFIX = "_reviews.txt"
+
+# delimiter for textfile
+DELIMITER = "-;-;-;-;-;-;-"
+
+# threadpool size
+THREADPOOL_SIZE = 4

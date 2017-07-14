@@ -3,6 +3,7 @@
     <words>
       <w>jsonfile</w>
       <w>textfiles</w>
+      <w>tokenized</w>
     </words>
   </dictionary>
 </component>

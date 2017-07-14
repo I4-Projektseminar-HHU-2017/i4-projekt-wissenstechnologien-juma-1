@@ -2,7 +2,7 @@ import io
 import json
 import os
 
-from src.const import OUTPUT_PATH, REVIEW_TXT_SUFFIX
+from src.const import *
 
 
 def write_json(name: str, data: list):
@@ -16,9 +16,9 @@ def write_reviews_into_textfiles(data: list):
             path = OUTPUT_PATH + str(review_set.get('points')) + REVIEW_TXT_SUFFIX
             if os.path.exists(path):
                 if os.stat(path).st_size == 0:
-                    to_write = review_set.get('text')
+                    to_write = review_set.get('text') + " \n" + DELIMITER
                 else:
-                    to_write = "\n\n" + review_set.get('text')
+                    to_write = "\n\n" + review_set.get('text') + " \n" + DELIMITER
                 with io.open(file=path, mode='a', encoding='utf-8') as text_file:
                     text_file.write(to_write)  # Write reviews into their designated textfiles
             else:

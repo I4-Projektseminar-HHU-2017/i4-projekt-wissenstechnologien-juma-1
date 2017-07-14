@@ -3,7 +3,7 @@ import itertools
 import time
 
 from src.bsoupadapter import BSoupAdapter
-from src.const import BASE_URL
+from src.const import *
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
@@ -94,7 +94,7 @@ class UserReviewHandler:
         else:
             return None
 
-    def execute_review_extraction(self, pool_size: int):
+    def execute_review_extraction(self):
         urls = self.find_all_user_review_pages()
 
         if urls is not None:
@@ -103,7 +103,7 @@ class UserReviewHandler:
                 """
                 ThreadPool to scrape through links a little faster.
                 """
-                pool = ThreadPoolExecutor(pool_size)  # pool size should ideally be not larger than 8
+                pool = ThreadPoolExecutor(THREADPOOL_SIZE)  # pool size should ideally be not larger than 8
                 data = []
                 with pool as executor:
                     print("Extracting user-reviews from " + self.extract_product_from_url() + "... ({} pages)\n".format(len(urls)))
