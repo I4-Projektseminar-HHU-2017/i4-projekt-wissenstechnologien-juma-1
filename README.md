@@ -34,9 +34,9 @@ Means that it is 2.6 times more likely for word to fall into category1 than cate
 The accuracy states in how many cases the algorithm’s prediction was correct, i.e. how many words from reviews he classified into a class that the word actually belongs to (based on the training set). <br>
 
 <h3>CONTACT</h3>
-•	Marko.Kluin@hhu.de <br>
+•	Marco.Kluin@hhu.de <br>
 •	Julia.Fuerst@hhu.de <br>
 
-<h6>Copyright 2017 Marko Kluin, Julia Fuerst</h6>
+<h6>Copyright 2017 Marco Kluin, Julia Fuerst</h6>
 
 
