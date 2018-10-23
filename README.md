@@ -28,10 +28,9 @@ b)	You can use the scraper to scrape other reviews which you wish to train / tes
 •	You can now execute the sentiment algorithm by typing in <i> sentiment make </i>. The algorithm will read in the reviews and edit them to make classifying them easier, i.e. tokenizing, removing of stop words and creating dictionaries for each category [see above]. Then it will classify the reviews. <br>
 <br>
 •	The output shows a list of the most informative features (those features the algorithm detected to be most helpful when classifying reviews) and the accuracy in percent. Next to the features you can see which two categories the words could belong to and how likely it is that they do: <br>
-<br>
 Word = True 	category1 : category2 	= 2.6 : 1.0 <br> 
 Means that it is 2.6 times more likely for word to fall into category1 than category2. <br>
-The accuracy states in how many cases the algorithm’s prediction was correct, i.e. how many words from reviews he classified into a class that the word actually belongs to (based on the training set). <br>
+The accuracy states in how many cases the algorithm’s prediction was correct, i.e. how many words from reviews it classified into a class that the word actually belongs to (based on the training set). <br>
 
 <h3>CONTACT</h3>
 •	Marco.Kluin@hhu.de <br>
