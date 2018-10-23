@@ -19,13 +19,13 @@ b)	You can use the scraper to scrape other reviews which you wish to train / tes
 <br>
 •	This is a command line program. To use the program, you have to download all required files [i.e. all files under scraper] and save them in one folder. <br>
 <br>
-•	Firstly, you need to type install_scraper.bat. This will install the scraper and create the needed output-files (= the .txt files that will contain the reviews) as well as a scraper.bat file. If you want to use the reviews that are provided here, you can skip this step. <br>
+•	Firstly, you need to type <i> install_scraper.bat</i>. This will install the scraper and create the needed output-files (= the .txt files that will contain the reviews) as well as a scraper.bat file. If you want to use the reviews that are provided here, you can skip this step. <br>
 <br>
-•	To see a list of all applicable commands, type in scrape -h. To scrape some reviews from Metacritic.com, type scrape. Note that the scraping cannot be aborted. <br> 
+•	To see a list of all applicable commands, type in <i> scrape -h</i>. To scrape some reviews from Metacritic.com, type <i> scrape </i>. Note that the scraping cannot be aborted. <br> 
 <br>
-•	The scraper scrapes user reviews from “games” by default. To change the category or any other settings, type scrape -h and read the instructions. <br>
+•	The scraper scrapes user reviews from “games” by default. To change the category or any other settings, type<i> scrape -h </i> and read the instructions. <br>
 <br>
-•	You can now execute the sentiment algorithm by typing in sentiment make. The algorithm will read in the reviews and edit them to make classifying them easier, i.e. tokenizing, removing of stop words and creating dictionaries for each category [see above]. Then it will classify the reviews. <br>
+•	You can now execute the sentiment algorithm by typing in <i> sentiment make </i>. The algorithm will read in the reviews and edit them to make classifying them easier, i.e. tokenizing, removing of stop words and creating dictionaries for each category [see above]. Then it will classify the reviews. <br>
 <br>
 •	The output shows a list of the most informative features (those features the algorithm detected to be most helpful when classifying reviews) and the accuracy in percent. Next to the features you can see which two categories the words could belong to and how likely it is that they do: <br>
 <br>
