@@ -1,4 +1,4 @@
-#I4-Projekt-Wissenstechnologien-JuMa {nbsp}
+#I4-Projekt-Wissenstechnologien-JuMa 
 scraper version 1.0 12.08.2017
 
 DESCRIPTION
