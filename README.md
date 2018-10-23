@@ -37,6 +37,11 @@ The accuracy states in how many cases the algorithm’s prediction was correct, 
 •	Marco.Kluin@hhu.de <br>
 •	Julia.Fuerst@hhu.de <br>
 
+<br>
+License: WTFPL
+
+<br>
+
 <h6>Copyright 2017 Marco Kluin, Julia Fuerst</h6>
 
 
